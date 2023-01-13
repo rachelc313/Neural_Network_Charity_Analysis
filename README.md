@@ -28,11 +28,48 @@ The "APPLICATION_TYPE", "AFFILIATION", "CLASSIFICATION", "USE_CASE", "ORGANIZATI
 The image above shows the code used to create the features and target variables for the model.
 
 - What variable(s) are neither targets nor features, and should be removed from the input data?
+The "EIN" and "NAME" columns were unnecessary for analysis so they were dropped from the DataFrame.
+
+2
+The image above shows the code used to drop the two columns from the dataframe. 
 
 ### Compiling, Training, and Evaluating the Model
 - How many neurons, layers, and activation functions were selected for the neural network model, and why?
+I used eight neurons in the first hidden layer and five neurons in the second hidden layer. I used these numbers because it was what was successful in the last neural network I created. I wanted to try this first and see how it performed.
+
+3
+The above image shows the code used to create the neural network and view the structure.
+
 - Was the target model performance achieved?
+No, target accuracy was 75%. My model achieved 71%.
+
+4
+The above image shows the evaluation of the model performance.
 - What steps were taken take to try and increase model performance?
+
+Attempt One:
+I first tried to remove the additional variable, "ASK_AMT." My initial thinking was that because it was so much larger, it was probably throwing off the model and I wanted to see if there was a big difference without it. 
+
+5
+The above image shows the code used to remove the "ASK_AMT" column.
+
+I also lowered the number of bins used for the application type column by increasing the the threshold for unique values.
+
+6
+The above image shows the code used to reduce the number of bins for "APPLICATION_TYPE"
+
+Lastly, I increased the number of neurons to twenty on the first hidden layer and 10 on the second hidden layer thinking that this would increase the accuracy of my model. 
+
+7
+The above image shows the code used to increase the number of neurons in each hidden layer.
+
+Result of Attempt One: The accuracy was slightly higher and the loss was much lower.
+
+8
+The above image shows the evaluation of Attempt One.
+
+
+
 
 
 ## Summary: 
