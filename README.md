@@ -24,11 +24,13 @@ The variable that was considered the target for my model was the "IS_SUCCESSFUL"
 - What variable(s) are considered to be the features for the model?
 The "APPLICATION_TYPE", "AFFILIATION", "CLASSIFICATION", "USE_CASE", "ORGANIZATION", "STATUS", "INCOME_AMT", "SPECIAL_CONSIDERATIONS", AND "ASK_AMT" columns were used as the features for the model.
 
-![1](https://user-images.githubusercontent.com/111570965/212379289-039bb1c3-c61b-4ac2-9806-0e168d6e13dc.png)
+![1](https://user-images.githubusercontent.com/111570965/212380280-9aea4899-2027-4914-a1ec-d3e835709705.png)
+
 
 The image above shows the code used to create the features and target variables for the model.
 
 - What variable(s) are neither targets nor features, and should be removed from the input data?
+
 The "EIN" and "NAME" columns were unnecessary for analysis so they were dropped from the DataFrame.
 
 ![2](https://user-images.githubusercontent.com/111570965/212379311-830a4323-9988-4a7d-b725-982f01c04edc.png)
@@ -37,6 +39,7 @@ The image above shows the code used to drop the two columns from the dataframe.
 
 ### Compiling, Training, and Evaluating the Model
 - How many neurons, layers, and activation functions were selected for the neural network model, and why?
+
 I used eight neurons in the first hidden layer and five neurons in the second hidden layer. I used these numbers because it was what was successful in the last neural network I created. I wanted to try this first and see how it performed.
 
 ![3](https://user-images.githubusercontent.com/111570965/212379339-b6f8f13a-d5f6-4f9f-93ac-1e032664f8fa.png)
@@ -44,6 +47,7 @@ I used eight neurons in the first hidden layer and five neurons in the second hi
 The above image shows the code used to create the neural network and view the structure.
 
 - Was the target model performance achieved?
+
 No, target accuracy was 75%. My model achieved 71%.
 
 ![4](https://user-images.githubusercontent.com/111570965/212379397-496303d2-1aa1-41de-b731-3481fbd1f6eb.png)
