@@ -48,6 +48,7 @@ The above image shows the evaluation of the model performance.
 - What steps were taken take to try and increase model performance?
 
 Attempt One:
+
 I first tried to remove the additional variable, "ASK_AMT." My initial thinking was that because it was so much larger, it was probably throwing off the model and I wanted to see if there was a big difference without it. 
 
 5
@@ -63,14 +64,44 @@ Lastly, I increased the number of neurons to twenty on the first hidden layer an
 7
 The above image shows the code used to increase the number of neurons in each hidden layer.
 
-Result of Attempt One: The accuracy was slightly higher and the loss was much lower.
+Result of Attempt One: 72% accuracy
 
 8
 The above image shows the evaluation of Attempt One.
+
+Attempt Two:
+
+For this attempt, I decided to try a different activation function, "tanh" instead of "relu." Knowing that these two were the most complex of the activation functions, I thought this could perhaps increase the accuracy of my model.
+
+9
+The above image shows the code used to run the model with the "tanh" function.
+
+Result of Attempt Two: 72%
+
+10
+The above image shows the evaluation of Attempt Two.
+
+Attempt Three:
+
+For my final attempt, I wanted to see if adding another hidden layer would increase the accuracy of my model.
+
+11
+The above image shows the code used to add another hidden layer with 5 neurons to the model.
+
+I also increased the epochs slightly to see if that would make a difference.
+
+Result of Attempt Three: 72% accuracy
+
+12
+The aboce image shows the code used to evaluate the model.
 
 
 
 
 
 ## Summary: 
-Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and explain your recommendation.
+Increasing the complexity of my model did not increase the accuracy as I thought it would. What I have learned from this challenge is that I need to keep working and practicing with deep learning models and obtain familiarity with how to chose the best model for each dataset. 
+
+I would recommend scaling the "ASK_AMT" column down to match the rest of the dataset. Have that be the only change after the initial model was created and notate any changes. If this did not increase the accuracy over 75%, then I would want to make the model less complex and make changes slowly and make note of what changes occur with each optimization. 
+
+I do not have enough experience with these models to make an official recommendation, but I would work on optimizing the model until the desired results are achieved and keep extensive notes of the process in order to utilize what was learned in later projects.
