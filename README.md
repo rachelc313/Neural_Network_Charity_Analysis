@@ -20,8 +20,10 @@ The analysis performed found that:
 
 ### Data Preprocessing
 - What variable(s) are considered the target(s) for the model?
+ 
 The variable that was considered the target for my model was the "IS_SUCCESSFUL" column.
 - What variable(s) are considered to be the features for the model?
+
 The "APPLICATION_TYPE", "AFFILIATION", "CLASSIFICATION", "USE_CASE", "ORGANIZATION", "STATUS", "INCOME_AMT", "SPECIAL_CONSIDERATIONS", AND "ASK_AMT" columns were used as the features for the model.
 
 ![1](https://user-images.githubusercontent.com/111570965/212380280-9aea4899-2027-4914-a1ec-d3e835709705.png)
